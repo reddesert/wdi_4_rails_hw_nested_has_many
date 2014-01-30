@@ -1,0 +1,7 @@
+<h1>Writers</h1>
+<p>Click on each name to see list of articles.</p>
+<dl>
+  <% @users.each do |user| %>
+  <dt><%= link_to user_articles_path[:user_id] %></dt>
+  <% end %>
+</dl>
